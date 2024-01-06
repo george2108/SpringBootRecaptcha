@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  recaptcha-db:
+    image: mysql:8.0
+    container_name: recaptcha-db
+    environment:
+      MYSQL_DATABASE: recaptcha-spring-boot-db
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "3306:3306"
